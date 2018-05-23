@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InternshipTest</string>
+    <string name="artist_name">Michael Jackson</string>
+    <string name="separation_bar">|</string>
+</resources>

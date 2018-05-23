@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/artist_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/five_dp_margin"
+                android:paddingTop="@dimen/five_dp_margin"
+                android:text="@string/artist_name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/song_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:paddingBottom="@dimen/five_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:paddingTop="@dimen/five_dp_margin"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kind_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name_text_view"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin" />
+
+        <TextView
+            android:id="@+id/separation_bar_one_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/kind_text_view"
+            android:layout_toEndOf="@id/kind_text_view"
+            android:layout_toRightOf="@id/kind_text_view"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin"
+            android:text="@string/separation_bar" />
+
+        <TextView
+            android:id="@+id/genre_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/kind_text_view"
+            android:layout_toEndOf="@id/separation_bar_one_text_view"
+            android:layout_toRightOf="@id/separation_bar_one_text_view"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin" />
+
+
+        <TextView
+            android:id="@+id/separation_bar_two_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/kind_text_view"
+            android:layout_toEndOf="@id/genre_text_view"
+            android:layout_toRightOf="@id/genre_text_view"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin"
+            android:text="@string/separation_bar" />
+
+        <TextView
+            android:id="@+id/release_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/kind_text_view"
+            android:layout_toEndOf="@id/separation_bar_two_text_view"
+            android:layout_toRightOf="@id/separation_bar_two_text_view" />
+
+        <TextView
+            android:id="@+id/song_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/kind_text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin" />
+
+        <ImageView
+            android:id="@+id/song_artwork_image_view"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/kind_text_view"
+            android:paddingBottom="@dimen/twenty_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:paddingTop="@dimen/twenty_dp_margin" />
+
+        <TextView
+            android:id="@+id/song_price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_artwork_image_view"
+            android:paddingBottom="@dimen/twenty_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/collection_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_price_text_view"
+            android:paddingBottom="@dimen/five_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/collection_price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection_name_text_view"
+            android:paddingBottom="@dimen/twenty_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/song_URL_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection_price_text_view"
+            android:autoLink="web"
+            android:paddingBottom="@dimen/twenty_dp_margin"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/artist_URL_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_URL_text_view"
+            android:autoLink="web"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
